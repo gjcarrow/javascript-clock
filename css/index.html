@@ -1,0 +1,71 @@
+html {
+  background:#018DED url(../stardust.png);
+  background-size:cover;
+  font-family:'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+html.day {
+  background:#018DED url(../day.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-size: 2rem;
+  display:flex;
+  flex:1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border:2px solid white;
+  border-radius:50%;
+  margin:50px auto;
+  position: relative;
+  padding:2rem;
+  transform: rotate(90deg);
+  box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+    background: url('../clock.png') no-repeat center;
+    background-size: contain;
+    /* background-position: 59% 57%; */
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.hand {
+  width:50%;
+  height:6px;
+  background:antiquewhite;
+  position: absolute;
+  top:50%;
+  transform:rotate(0deg);
+  transform-origin:right;
+  }
+.hand:first-child {
+  width: 25%;
+  left:25%;
+  transform:rotate(0deg);
+
+}
+.hand:nth-of-type(2) {
+  transform:rotate(0deg);
+}
+.hand:nth-of-type(3) {
+  top:50.45%;
+  transform:rotate(0deg);
+  height: 3px;
+}
