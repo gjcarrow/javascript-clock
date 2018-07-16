@@ -12,4 +12,4 @@ requestAnimationFrame polyfill by Erik MÃ¶ller. fixes from Paul Irish and Tino
 MIT license
 
 
-Check out [Demo](http://unique-smell.surge.sh/)
+Check out [Demo](http://automatic-battle.surge.sh/)
